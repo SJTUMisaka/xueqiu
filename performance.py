@@ -25,7 +25,7 @@ for i in range(1344,1345):
         #driver.quit()
         continue
     f = open("performance_weight\\ZH%06d.txt"%(i),"w")
-    print(name.string)
+    print(name.string, file = f)
     Id = resp.find("span", class_ = "symbol")
     print(Id.string, file = f)
     total = resp.find_all("span", class_="per")
