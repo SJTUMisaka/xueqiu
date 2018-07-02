@@ -1,6 +1,6 @@
 # 雪球网爬虫 
 雪球网的爬虫比起微信公众号爬虫有个易处理的点在于它的url是很有规律的，而且没有key啊userid之类的反爬虫手段
-##数据
+## 数据
 change 最近调仓数据   
 "stock_symbol" "stock_name" "price" "weight" "prev_weight_adjusted"  
 分别是股票的id(SHXXXXXX) 名字 成交价 现权重 之前权重   
