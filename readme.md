@@ -5,7 +5,7 @@
 python3 urllib urllib3 Beautifulsoup
 ## 代码
 代码分为三部分，分别爬取了最近调仓数据、收益率走势数据和其他信息  
-change.py: 先到"https://xueqiu.com/P/ZH%06d" 里去获得一个last_user_rb_gid的信息（需要用到正则表达式），之后再利用这个last_user_rb_gid直接到https://xueqiu.com/cubes/rebalancing/show_origin.json?rb_id=*** 爬取调仓数据信息
+change.py: 先到"https://xueqiu.com/P/ZH%06d" 里去获得一个last_user_rb_gid的信息（需要用到正则表达式），之后再利用这个last_user_rb_gid直接到https://xueqiu.com/cubes/rebalancing/show_origin.json?rb_id=*** 爬取调仓数据信息  
 data.py: 根据规律"https://xueqiu.com/cubes/nav_daily/all.json?cube_symbol=ZH%06d" 直接进行遍历，利用http.request直接将json形式的网页内容获取。  
 performance.py：利用beautifulsoup在"https://xueqiu.com/P/ZH%06d" 里find所需要的各种数据
 ## 数据
