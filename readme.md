@@ -1,6 +1,8 @@
 # 雪球网爬虫 
 雪球网的爬虫比起微信公众号爬虫有个易处理的点在于它的url是很有规律的，而且没有key啊userid之类的反爬虫手段  
 比如https://xueqiu.com/P/ZH019696 这样，因此我们可以很容易地遍历url来爬取，但也会遇到一些问题，如有些组合已经被删除之类的
+## 需求
+python3 urllib urllib3 Beautifulsoup
 ## 代码
 代码分为三部分，分别爬取了最近调仓数据、收益率走势数据和其他信息
 ## 数据
@@ -43,3 +45,7 @@ ETF 3.47%
 房地产 13.98%  
 万科A SZ000002 13.98%  
 现金 32.48%  
+## 现状
+2018.7.2 url规律依旧没变  
+performance.py依旧可用  
+data.py出现{"error_description":"遇到错误，请刷新页面或者重新登录帐号后再试","error_uri":"/cubes/nav_daily/all.json","error_code":"400016"}考虑更改headers试试，change.py能爬取到数据 但输出到文件时存在编码问题报错。
